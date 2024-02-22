@@ -1,0 +1,10 @@
+creo un repositorio en github
+
+1 git init
+git remote add origin https://github.com/tu_usuario/tu_repositorio.git
+
+2 git clone https://github.com/tu_usuario/tu_repositorio.git
+
+git add *
+git commit -m "mensaje del commit"
+git push origin

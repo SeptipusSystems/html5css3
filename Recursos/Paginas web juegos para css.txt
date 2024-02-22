@@ -5,3 +5,4 @@ https://cssgridgarden.com/#es
 https://grid.layoutit.com/
 https://codepen.io/trending
 https://cssbattle.dev/
+https://www.color-hex.com/

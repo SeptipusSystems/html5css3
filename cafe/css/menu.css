@@ -1,10 +1,42 @@
+@media screen and (max-width: 768px) {
+  ul {
+    display: none;
+  }
+
+  span {
+    display: block !important;
+  }
+}
+
 ul {
-  list-style-type: none;
+  list-style-type: none; /* comentario */
 }
 
 li {
-  border: 1px solid #f00;
   display: inline;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  transition: 1s;
+  font-size: 20px;
+}
+
+li a:hover {
+  color: #fff;
+  background-color: #000;
+  padding: 10px;
+  font-size: 15px;
+}
+
+span {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
 }
 
 img {

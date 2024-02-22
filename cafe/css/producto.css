@@ -1,0 +1,68 @@
+* {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+div {
+  /*border: 1px solid #f00;*/
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(
+    8,
+    1fr
+  ); /* Simplifica la definición de las columnas */
+  grid-template-rows: repeat(
+    8,
+    1fr
+  ); /* Simplifica la definición de las filas */
+  gap: 0px; /* Puedes ajustar el espacio entre las celdas si lo deseas */
+  grid-auto-flow: row;
+}
+
+.Titulo {
+  font-size: 40px;
+  grid-area: 1 / 1 / 5 / 5; /* El título ocupa las primeras cuatro filas y columnas */
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.detalle {
+  grid-area: 5 / 1 / 6 / 5; /* Detalle ocupa la quinta fila y las primeras cuatro columnas */
+}
+
+.Imagen {
+  grid-area: 1 / 5 / 8/ 9; /* La imagen ocupa desde la primera hasta la quinta fila y desde la quinta hasta la última columna */
+}
+
+.Precio {
+  grid-area: 6 / 1 / 7 / 3; /* Precio ocupa la sexta fila y las primeras dos columnas */
+}
+
+.Peso {
+  grid-area: 6 / 3 / 7 / 5; /* Peso ocupa la sexta fila y las siguientes dos columnas */
+}
+
+.Variedades {
+  grid-area: 7 / 1 / 8 / 5; /* Variedades ocupa la séptima fila y las primeras cuatro columnas */
+}
+
+.Cantidad {
+  grid-area: 8 / 1 / 9 / 3; /* Cantidad ocupa la octava fila y las primeras dos columnas */
+}
+
+.Pedido {
+  grid-area: 8 / 3 / 9 / 5; /* Pedido ocupa la octava fila y las siguientes dos columnas */
+}
+
+.Tostado {
+  grid-area: 8 / 5 / 9 / 9; /* Tostado ocupa la octava fila y las columnas restantes */
+}
