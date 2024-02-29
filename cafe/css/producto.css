@@ -5,24 +5,19 @@
   font-style: normal;
 }
 
-div {
-  /*border: 1px solid #f00;*/
-}
-
 img {
   max-width: 100%;
 }
 
 .container {
   display: grid;
+  width: 720px;
+  margin: 20px auto;
   grid-template-columns: repeat(
     8,
     1fr
   ); /* Simplifica la definición de las columnas */
-  grid-template-rows: repeat(
-    8,
-    1fr
-  ); /* Simplifica la definición de las filas */
+  grid-template-rows: 2fr 3fr 1fr 1fr 1.5fr 1fr; /* Simplifica la definición de las filas */
   gap: 0px; /* Puedes ajustar el espacio entre las celdas si lo deseas */
   grid-auto-flow: row;
 }
@@ -33,9 +28,12 @@ img {
   display: flex;
   text-align: center;
   align-items: center;
+  padding: 30px;
+  padding-top: 3em;
 }
 
 .detalle {
+  font-size: 13px;
   grid-area: 5 / 1 / 6 / 5; /* Detalle ocupa la quinta fila y las primeras cuatro columnas */
 }
 
@@ -44,7 +42,15 @@ img {
 }
 
 .Precio {
+  font-size: 30px;
   grid-area: 6 / 1 / 7 / 3; /* Precio ocupa la sexta fila y las primeras dos columnas */
+}
+
+#onzas {
+  height: 35px;
+  width: 70px;
+  border: none;
+  background-color: bisque;
 }
 
 .Peso {
@@ -52,17 +58,51 @@ img {
 }
 
 .Variedades {
-  grid-area: 7 / 1 / 8 / 5; /* Variedades ocupa la séptima fila y las primeras cuatro columnas */
+  padding: 10px 0;
+  grid-area: 7 / 1 / 9 / 5; /* Variedades ocupa la séptima fila y las primeras cuatro columnas */
+}
+
+.variedad {
+  display: inline-block;
+  width: 100px;
+  height: 150px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 8px;
+}
+
+.variedad .titulo {
+  display: block;
+  text-align: center;
+}
+
+.seleccionado {
+  background-color: #eee !important;
 }
 
 .Cantidad {
-  grid-area: 8 / 1 / 9 / 3; /* Cantidad ocupa la octava fila y las primeras dos columnas */
+  grid-area: 9 / 1 / 10 / 3; /* Cantidad ocupa la octava fila y las primeras dos columnas */
+}
+
+.contador {
+  width: 75px;
+  height: 30px;
+  border: 1px solid;
+}
+
+.contador span {
+  display: inline-block;
+  width: 18px;
+  line-height: 30px;
+  text-align: center;
 }
 
 .Pedido {
-  grid-area: 8 / 3 / 9 / 5; /* Pedido ocupa la octava fila y las siguientes dos columnas */
+  grid-area: 9 / 3 / 10 / 5; /* Pedido ocupa la octava fila y las siguientes dos columnas */
 }
 
 .Tostado {
-  grid-area: 8 / 5 / 9 / 9; /* Tostado ocupa la octava fila y las columnas restantes */
+  grid-area: 9 / 5 / 10 / 9; /* Tostado ocupa la octava fila y las columnas restantes */
 }
