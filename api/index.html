@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <style>
+      .item {
+        margin: 10px;
+        padding: 5px;
+        border-radius: 3px;
+      }
+      #content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+      }
+      .item {
+        background-color: #f9f9f9;
+        padding: 20px; /* Relleno interno */
+        text-align: center; /* Alinear texto al centro */
+      }
+
+      img {
+        max-width: 100%;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="content"></div>
+  </body>
+</html>
