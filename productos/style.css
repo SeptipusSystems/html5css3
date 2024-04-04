@@ -2,11 +2,38 @@ img{
   max-width: 100%;  
 }
 
+header{
+  background-color: orangered;
+  grid-area: header;
+}
+
+.banner{
+  background-color: orangered;
+  grid-area: banner;  
+}
+
+.flayer{
+  display: grid;
+  align-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section{
+  background-color: greenyellow;
+  grid-area: section;
+}
+
+footer{
+  background-color: blue;
+  grid-area: footer;
+}
+
 #productos{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 10px;
-    margin: 0 200px;
+    /*margin: 0 200px;*/
 }
 
 .item {
@@ -17,3 +44,81 @@ img{
     padding: 20px; /* Relleno interno */
     text-align: center; /* Alinear texto al centro */
   }
+
+body{
+  display:grid;
+  grid-template-areas:
+  "header header"
+  "section banner"
+  "footer footer";
+  grid-template-rows: 100px 1fr 50px;
+  grid-template-columns: 1fr 400px;
+  grid-gap: 20px;
+}
+
+@media (min-width: 1024px){
+  .banner img{
+    max-width: 150%;
+  }
+}
+
+@media (max-width: 2024px) {
+  #productos{
+    grid-template-columns: repeat(4, 1fr);
+    /*margin: 0 100px;*/
+  }
+}
+
+  @media (max-width: 1024px) {
+    body{
+      grid-template-areas:
+      "header"
+      "banner"
+      "section"
+      "footer";
+      grid-template-rows: 100px 300px 1fr 50px;
+      grid-template-columns: 1fr;
+    }
+
+    #productos{
+      grid-template-columns: repeat(3, 1fr);
+      margin: 0 100px;
+    }
+
+    .flayer{
+      margin: 0 auto;
+      max-height: 300px;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    body{
+      grid-template-areas:
+      "header"
+      "section"
+      "banner"
+      "footer";
+      grid-template-rows: 100px 1fr 300px 50px;
+      grid-template-columns: 1fr;
+    }
+
+    #productos{
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 50px;
+    }
+
+    .flayer{
+      margin: 0 auto;
+      max-height: unset;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #productos{
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+    }
+  }
+
+
