@@ -1,0 +1,29 @@
+.banner{
+    width:900px;
+    height: 400px;
+    border: 1px solid red;
+}
+
+.back1{
+  background-color: #fff8e1;
+  width:300px;
+  height:200px;
+}
+
+.back2{
+    background-color: #ffecb3;
+    width:90px;
+    height: 40px;
+  }
+
+  .back3{
+    background-color: #ffd54f;
+    width:90px;
+    height: 40px;
+  }
+
+  .back4{
+    background-color: #ffb300;
+    width:90px;
+    height: 40px;
+  }
